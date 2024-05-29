@@ -13,7 +13,7 @@
     - name: Run docker-compose
       community.docker.docker_compose_v2:
         project_src: /home/maga/time-app-project/
-        pull: true
+        pull: always
         recreate: always
         state: present
       register: output
