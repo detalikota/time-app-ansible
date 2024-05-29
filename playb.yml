@@ -12,7 +12,12 @@
         group: maga
     - name: Run docker-compose
       community.docker.docker_compose:
-	      project_src: /home/maga/time-app-project/docker-compose.yml
+	      project_src: /home/maga/time-app-project/
+	      file: docker-compose.yml
+	      pull: yes
+	      recreate: yes
+	      detach: yes
+	      state: present
       register: output
     - name: show results
       ansible.builtin.debug:
