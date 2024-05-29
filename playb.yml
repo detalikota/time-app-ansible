@@ -11,7 +11,7 @@
         owner: maga
         group: maga
     - name: Run docker-compose
-      shell: docker-compose up -d --file ./files/docker-compose.yml 
+      shell: docker-compose -f ./files/docker-compose.yml up -d  
       register: output
     - name: show results
       ansible.builtin.debug:
