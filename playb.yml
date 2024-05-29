@@ -11,7 +11,7 @@
         owner: maga
         group: maga
     - name: Run docker-compose
-      community.docker.docker_compose:
+      community.docker.docker_compose_v2:
         project_src: /home/maga/time-app-project/
         pull: true
         recreate: always
