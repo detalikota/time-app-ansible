@@ -6,7 +6,7 @@
   tasks:
     - name: Copy docker-compose files
       copy:
-        src: /files/docker-compose.yml
+        src: ./files/docker-compose.yml
         dest: /home/maga/time-app-project/docker-compose.yml
         owner: maga
         group: maga
